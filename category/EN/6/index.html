@@ -20,6 +20,7 @@
   <link rel="stylesheet" href="https://mhwkb.github.io/assets/css/font-awesome.min.css">
   <!-- style.css reference   -->
   <link rel="stylesheet" href="https://mhwkb.github.io/assets/css/style.css">
+  <link rel="stylesheet" href="https://mhwkb.github.io/assets/css/bootstrap-formhelpers.css">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -41,12 +42,18 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="https://mhwkb.github.io">
-            <img alt="Brand" width="20" height="20" src="https://mhwkb.github.io/images/mhwkb_dharma_wheel_logo_180x170.png">
+            <img alt="Brand" class="brand-img" src="https://mhwkb.github.io/images/mhwkb_dharma_wheel_logo_180x170.png">
           </a>
           <a class="navbar-brand" href="https://mhwkb.github.io">Mental Health Knowledge Base</a>
         </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
+          <li>
+              <div id="languageSelector" class="navbar-btn bfh-selectbox bfh-languages" data-language="00_00"
+                data-available="" data-flags="true" data-blank="false">
+              </div>
+          </li>
+          <li><a href="https://mhwkb.github.io/tag_cloud/"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Tag cloud</a></li>
           <li><a href="https://mhwkb.github.io"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
           <li><a href="https://github.com/mhwkb/mhwkb.github.io#mhwkb"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a></li>
           <li><a href="https://mhwkb.github.io/feed.xml"><i class="fa fa-rss"></i> RSS</a></li>
@@ -57,7 +64,8 @@
   <div class="container">
     <div class="text-center">
       <h1><img src="https://mhwkb.github.io/images/mhwkb_dharma_wheel_logo_180x170.png" alt="mhwKB wheel of Dharma logo" width="180" height="170">Mental Health Knowledge Base</h1>
-      <div class="text-center">
+      <!-- disabled after nav dropdown: https://github.com/mhwkb/mhwkb.github.io/pull/102
+<div class="text-center">
   <h2>
   
     
@@ -72,12 +80,15 @@
       
         <a class="label label-danger" href="https://mhwkb.github.io/category/SV/">SV</a>
       
-        <a class="label label-danger" href="https://mhwkb.github.io/category/NP/">NP</a>
+        <a class="label label-danger" href="https://mhwkb.github.io/category/NE/">NE</a>
+      
+        <a class="label label-danger" href="https://mhwkb.github.io/category/pt_BR/">pt_BR</a>
       
     
   
   </h2>
 </div>
+-->
 
     </div>
   </div>
@@ -88,116 +99,102 @@
         <div class="container">
   <div class="text-center">
     <div id="search-container" class="dropdown">
-      <input type="text" id="search-input" placeholder="search..." onkeyup="checkSearchValAndDropdown();">
-      <ul id="results-container" class="dropdown-menu"></ul>
-    </div>
+  <input type="text" id="search-input" placeholder="search..." onkeyup="checkSearchValAndDropdown();">
+  <ul id="results-container" class="dropdown-menu"></ul>
+</div>
+
     
-    <nav aria-label="...">
-      <ul class="pagination">
-        <li class="page-item">
-          <a class="page-link" href="/category/EN/5/">Previous</a>
-        </li>
-        
-        <li class="page-item">
-          <a class="page-link" href="/category/EN/2/" title="English - page 2">2</a>
-        </li>
-        
-        <li class="page-item">
-          <a class="page-link" href="/category/EN/3/" title="English - page 3">3</a>
-        </li>
-        
-        <li class="page-item">
-          <a class="page-link" href="/category/EN/4/" title="English - page 4">4</a>
-        </li>
-        
-        <li class="page-item">
-          <a class="page-link" href="/category/EN/5/" title="English - page 5">5</a>
-        </li>
-        
-        <li class="page-item active">
-          <a class="page-link" href="/category/EN/6/" title="English - page 6">6</a>
-        </li>
-        
-        <li class="page-item disabled"class="page-item">
-          <a class="page-link" href="">Next</a>
-        </li>
-      </ul>
-    </nav>
+<nav aria-label="...">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="/category/EN/5/">Previous</a>
+    </li>
     
+    <li class="page-item">
+      <a class="page-link" href="/category/EN/4/" title="English - page 4">4</a>
+    </li>
     
-        <div class="panel">
+    <li class="page-item">
+      <a class="page-link" href="/category/EN/5/" title="English - page 5">5</a>
+    </li>
+    
+    <li class="page-item active">
+      <a class="page-link" href="/category/EN/6/" title="English - page 6">6</a>
+    </li>
+    
+    <li class="page-item">
+      <a class="page-link" href="/category/EN/7/" title="English - page 7">7</a>
+    </li>
+    
+    <li class="page-item">
+      <a class="page-link" href="/category/EN/8/" title="English - page 8">8</a>
+    </li>
+    
+    <li class="page-item"class="page-item">
+      <a class="page-link" href="/category/EN/7/">Next</a>
+    </li>
+  </ul>
+</nav>
+
+
+    
+        <div class="panel" lang-id="EN">
 	<div>
-		<a class="panel-title" href="https://www.samhsa.gov/veterans-military-families">SAMHSA: Veterans and Military Families</a>
+		<a class="panel-title" href="https://www.health.qld.gov.au/news-alerts/news/men-how-to-have-conversation-mate-mental-health">Men: how to have a conversation with a mate about mental health</a>
 	</div>
 	<div>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/veterans/">veterans</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/men/">men</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/family/">family</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/friendships/">friendships</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/substance-abuse/">substance abuse</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/mates/">mates</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/usa/">USA</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/providing-support/">providing support</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/government/">government</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/advice/">advice</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/australia/">Australia</a>
 		
 	</div>
 </div>
 
     
-        <div class="panel">
+        <div class="panel" lang-id="EN">
 	<div>
-		<a class="panel-title" href="https://www.goodreads.com/book/show/239464.Your_Drug_May_Be_Your_Problem">Your Drug May Be Your Problem: How & Why to Stop Taking Psychiatric Medications</a>
+		<a class="panel-title" href="https://www.madinamerica.com/">Mad in America</a>
 	</div>
 	<div>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/books/">books</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/journalism/">journalism</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/peter-breggin/">Peter Breggin</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/news/">news</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/doctors/">doctors</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/blogs/">blogs</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/david-cohen/">David Cohen</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/phd/">PhD</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/side-effects/">side effects</a>
-		
-	</div>
-</div>
-
-    
-        <div class="panel">
-	<div>
-		<a class="panel-title" href="http://www.ohchr.org/EN/NewsEvents/Pages/DisplayNews.aspx?NewsID=21689&LangID=E">World needs revolution in mental health care - Dainius Pūras</a>
-	</div>
-	<div>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/doctors/">doctors</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/press-releases/">press releases</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/human-rights/">human rights</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/un/">UN</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/stories/">stories</a>
 		
 		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/social-justice/">social justice</a>
 		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/will-hall/">Will Hall</a>
+		
 	</div>
 </div>
 
     
-        <div class="panel">
+        <div class="panel" lang-id="EN">
 	<div>
-		<a class="panel-title" href="https://www.wildmind.org/metta/metta-four/stirred-up-emotion">When meditation seems to stir up negative emotion</a>
+		<a class="panel-title" href="https://psychcentral.com/blog/archives/2014/09/13/low-serotonin-levels-dont-cause-depression/">Low Serotonin Levels Don’t Cause Depression</a>
 	</div>
 	<div>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/meditation/">meditation</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/doctors/">doctors</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/negativity/">negativity</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/medication/">medication</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/buddhism/">Buddhism</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/discussion/">discussion</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/james-grohol/">James Grohol</a>
 		
 		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/blogs/">blogs</a>
 		
@@ -205,81 +202,149 @@
 </div>
 
     
-        <div class="panel">
+        <div class="panel" lang-id="EN">
 	<div>
-		<a class="panel-title" href="https://www.quora.com/What-are-mental-health-symptoms-you-should-never-ignore">What are mental health symptoms you should never ignore</a>
+		<a class="panel-title" href="https://medium.com/anxy-magazine/doctors-put-me-on-40-different-meds-for-bipolar-and-depression-it-almost-killed-me-c5e4fbea2816">Doctors put me on 40 different meds for bipolar and depression. It almost killed me</a>
 	</div>
 	<div>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/advice/">advice</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/symptoms/">symptoms</a>
 		
 		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/viewpoints/">viewpoints</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/discussion/">discussion</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/medium/">medium</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/personal-stories/">personal stories</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/bipolar-disorder/">bipolar disorder</a>
 		
 	</div>
 </div>
 
     
-        <div class="panel">
+        <div class="panel" lang-id="EN">
 	<div>
-		<a class="panel-title" href="https://www.mentalhealth.va.gov/">The Mental Health Home for Veterans Affairs</a>
+		<a class="panel-title" href="http://lovenotessuicideletters.blogspot.com/">LoveNotes&SuicideLetters</a>
 	</div>
 	<div>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/veterans/">veterans</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/blogs/">blogs</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/usa/">USA</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/self-expression/">self-expression</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/government/">government</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/personal-stories/">personal stories</a>
 		
-	</div>
-</div>
-
-    
-        <div class="panel">
-	<div>
-		<a class="panel-title" href="http://jamanetwork.com/journals/jama/fullarticle/202463">Mental Health Problems, Use of Mental Health Services, and Attrition From Military Service After Returning From Deployment to Iraq or Afghanistan</a>
-	</div>
-	<div>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/youth/">youth</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/veterans/">veterans</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/treatment/">treatment</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/studies/">studies</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/usa/">USA</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/iraq/">Iraq</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/afghanistan/">Afghanistan</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/jama/">JAMA</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/blogspot/">blogspot</a>
 		
 	</div>
 </div>
 
     
-        <div class="panel">
+        <div class="panel" lang-id="EN">
 	<div>
-		<a class="panel-title" href="https://www.blackdoginstitute.org.au/">Black Dog Institute</a>
+		<a class="panel-title" href="https://lensgirl53.wordpress.com/does-a-suicide-go-to-heaven/">Does a Suicide Go To Heaven?</a>
 	</div>
 	<div>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/workplace/">workplace</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/wordpress/">wordpress</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/community/">community</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/christian/">christian</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/resources/">resources</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/spirituality/">spirituality</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/directory/">directory</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/suicide/">suicide</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/mothers/">mothers</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/children/">children</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/viewpoints/">viewpoints</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/death/">death</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/personal-stories/">personal stories</a>
+		
+	</div>
+</div>
+
+    
+        <div class="panel" lang-id="EN">
+	<div>
+		<a class="panel-title" href="https://behavioraltech.org/resources/">Dialectical Behavior Therapy (DBT) Resources</a>
+	</div>
+	<div>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/dbt/">dbt</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/therapy/">therapy</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/non-pharmacological/">non-pharmacological</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/marsha-linehan/">Marsha Linehan</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/phd/">PhD</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/abpp/">ABPP</a>
+		
+	</div>
+</div>
+
+    
+        <div class="panel" lang-id="EN">
+	<div>
+		<a class="panel-title" href="http://a.co/aOGY247">Overdosed America: The Broken Promise of American Medicine</a>
+	</div>
+	<div>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/books/">books</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/medication/">medication</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/john-abramson/">John Abramson</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/doctors/">doctors</a>
+		
+	</div>
+</div>
+
+    
+        <div class="panel" lang-id="EN">
+	<div>
+		<a class="panel-title" href="https://osmihelp.org">Open Sourcing Mental Illness (OSMI)</a>
+	</div>
+	<div>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/open-source/">open source</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/technology/">technology</a>
 		
 		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/education/">education</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/training/">training</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/osmi/">OSMI</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/resources/">resources</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/discussion/">discussion</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/stress/">stress</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/workplace/">workplace</a>
+		
+	</div>
+</div>
+
+    
+        <div class="panel" lang-id="EN">
+	<div>
+		<a class="panel-title" href="https://en.wikipedia.org/wiki/Psychiatric_survivors_movement">Psychiatric survivors movement - Wikipedia</a>
+	</div>
+	<div>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/education/">education</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/wikipedia/">Wikipedia</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/psychiatric-survivors/">psychiatric survivors</a>
 		
 		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/research/">research</a>
 		
@@ -287,180 +352,146 @@
 </div>
 
     
-        <div class="panel">
+        <div class="panel" lang-id="EN">
 	<div>
-		<a class="panel-title" href="https://www.beyondblue.org.au/">Beyond Blue</a>
+		<a class="panel-title" href="https://psychcentral.com/">Psych Central</a>
 	</div>
 	<div>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/australia/">Australia</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/education/">education</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/chat/">chat</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/web-portal/">web portal</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/forum/">forum</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/forums/">forums</a>
 		
 		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/resources/">resources</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/lgbtq/">LGBTQ</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/collaborative/">collaborative</a>
 		
 		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/community/">community</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/youth/">youth</a>
-		
-	</div>
-</div>
-
-    
-        <div class="panel">
-	<div>
-		<a class="panel-title" href="http://a.co/fUqjjn0">Bad Pharma: How Drug Companies Mislead Doctors and Harm Patients</a>
-	</div>
-	<div>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/books/">books</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/ben-goldacre/">Ben Goldacre</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/doctors/">doctors</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/conflicts-of-interest/">conflicts-of-interest</a>
-		
-	</div>
-</div>
-
-    
-        <div class="panel">
-	<div>
-		<a class="panel-title" href="http://a.co/8ZkS4i5">Anatomy of an Epidemic: Magic Bullets, Psychiatric Drugs, and the Astonishing Rise of Mental Illness in America</a>
-	</div>
-	<div>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/robert-whitaker/">Robert Whitaker</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/journalism/">journalism</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/books/">books</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/side-effects/">side effects</a>
-		
-	</div>
-</div>
-
-    
-        <div class="panel">
-	<div>
-		<a class="panel-title" href="http://ahrp.org/">Alliance for Human Research Protection</a>
-	</div>
-	<div>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/doctors/">doctors</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/human-rights/">human rights</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/news/">news</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/discussion/">discussion</a>
 		
 		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/blogs/">blogs</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/collaborative/">collaborative</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/ahrp/">AHRP</a>
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/news/">news</a>
 		
 	</div>
 </div>
 
     
-        <div class="panel">
+        <div class="panel" lang-id="EN">
 	<div>
-		<a class="panel-title" href="https://www.wellnessresources.com/news/antidepressants-increase-risk-of-diabetes-heart-attack-and-dementia">Antidepressants Increase Risk of Diabetes, Heart Attack, and Dementia</a>
-	</div>
-	<div>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/antidepressants/">antidepressants</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/safety/">safety</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/nutrition/">nutrition</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/chiropractors/">chiropractors</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/health-risks/">health risks</a>
-		
-	</div>
-</div>
-
-    
-        <div class="panel">
-	<div>
-		<a class="panel-title" href="http://a.co/0BuSDiT">Side Effects: A Prosecutor, a Whistleblower, and a Bestselling Antidepressant on Trial</a>
-	</div>
-	<div>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/books/">books</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/alison-bass/">Alison Bass</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/journalism/">journalism</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/side-effects/">side effects</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/conflicts-of-interest/">conflicts-of-interest</a>
-		
-	</div>
-</div>
-
-    
-        <div class="panel">
-	<div>
-		<a class="panel-title" href="https://acanvasoftheminds.com/">A Canvas of the Minds</a>
+		<a class="panel-title" href="https://psychsurvivoryyc.wordpress.com/">Psych Survivor YYC</a>
 	</div>
 	<div>
 		
 		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/wordpress/">wordpress</a>
 		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/personal-stories/">personal stories</a>
-		
-		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/collaborative/">collaborative</a>
-		
 		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/blogs/">blogs</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/psychiatric-survivors/">psychiatric survivors</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/canada/">Canada</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/viewpoints/">viewpoints</a>
 		
 	</div>
 </div>
 
     
+        <div class="panel" lang-id="EN">
+	<div>
+		<a class="panel-title" href="https://psychcentral.com/resources/">Psych Central Resource Directory</a>
+	</div>
+	<div>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/resources/">resources</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/directory/">directory</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/doctors/">doctors</a>
+		
+	</div>
+</div>
 
     
-    <nav aria-label="...">
-      <ul class="pagination">
-        <li class="page-item">
-          <a class="page-link" href="/category/EN/5/">Previous</a>
-        </li>
-        
-        <li class="page-item">
-          <a class="page-link" href="/category/EN/2/" title="English - page 2">2</a>
-        </li>
-        
-        <li class="page-item">
-          <a class="page-link" href="/category/EN/3/" title="English - page 3">3</a>
-        </li>
-        
-        <li class="page-item">
-          <a class="page-link" href="/category/EN/4/" title="English - page 4">4</a>
-        </li>
-        
-        <li class="page-item">
-          <a class="page-link" href="/category/EN/5/" title="English - page 5">5</a>
-        </li>
-        
-        <li class="page-item active">
-          <a class="page-link" href="/category/EN/6/" title="English - page 6">6</a>
-        </li>
-        
-        <li class="page-item disabled"class="page-item">
-          <a class="page-link" href="">Next</a>
-        </li>
-      </ul>
-    </nav>
+        <div class="panel" lang-id="EN">
+	<div>
+		<a class="panel-title" href="https://sunyatazero.github.io/mindfulness-at-the-computer/">Mindfulness at the Computer</a>
+	</div>
+	<div>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/github/">GitHub</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/python/">python</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/qt/">Qt</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/self-care/">self-care</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/mindfulness/">mindfulness</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/breathing/">breathing</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/notifier/">notifier</a>
+		
+	</div>
+</div>
+
     
+        <div class="panel" lang-id="EN">
+	<div>
+		<a class="panel-title" href="https://www.amazon.com/Pharmageddon-David-Healy/dp/0520275764">Pharmageddon</a>
+	</div>
+	<div>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/books/">books</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/david-healy/">David Healy</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/doctors/">doctors</a>
+		
+		<a class="btn btn-primary" href="https://mhwkb.github.io/tag/medication/">medication</a>
+		
+	</div>
+</div>
+
+    
+    
+<nav aria-label="...">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="/category/EN/5/">Previous</a>
+    </li>
+    
+    <li class="page-item">
+      <a class="page-link" href="/category/EN/4/" title="English - page 4">4</a>
+    </li>
+    
+    <li class="page-item">
+      <a class="page-link" href="/category/EN/5/" title="English - page 5">5</a>
+    </li>
+    
+    <li class="page-item active">
+      <a class="page-link" href="/category/EN/6/" title="English - page 6">6</a>
+    </li>
+    
+    <li class="page-item">
+      <a class="page-link" href="/category/EN/7/" title="English - page 7">7</a>
+    </li>
+    
+    <li class="page-item">
+      <a class="page-link" href="/category/EN/8/" title="English - page 8">8</a>
+    </li>
+    
+    <li class="page-item"class="page-item">
+      <a class="page-link" href="/category/EN/7/">Next</a>
+    </li>
+  </ul>
+</nav>
+
+
   </div>
 </div>
 
@@ -468,47 +499,44 @@
     </main>
     <footer class="site-footer">
   <div class="container">
-    <div class="text-center">
-      <a class="btn btn-custom" href="https://mhwkb.github.io"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
-      <a class="btn btn-custom" href="https://github.com/mhwkb/mhwkb.github.io#mhwkb"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a>
-      <a class="btn btn-custom" href="https://mhwkb.github.io/feed.xml"><i class="fa fa-rss"></i> RSS</a>
-      <br /><br/>
+    <h1>Recent Mental Health-related posts from Other Sites</h1>
+    <h2>If Me</h2>
+    <script src="//rss.bloople.net/?url=https%3A%2F%2Fmedium.com%2Ffeed%2Fifme&limit=5&showtitle=false&type=js"></script>
+    <h2>Psych Central Blog Network - Recent Headlines</h2>
+    <script src="//rss.bloople.net/?url=https%3A%2F%2Fpsychcentral.com%2Fallblogs%2Ffeed%2F&limit=5&showtitle=false&type=js"></script>
+    <h2>Mad in America - Recent Headlines</h2>
+    <script src="//rss.bloople.net/?url=https%3A%2F%2Fwww.madinamerica.com%2Ffeed&limit=5&showtitle=false&type=js"></script>
+  </div>
+  <div class="navbar navbar-default">
+    <div class="container">
+    <div class="row">
+      <div class="footer-buttons text-center col-md-12">
+          <a class="btn btn-custom" href="https://mhwkb.github.io"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
+          <a class="btn btn-custom" href="https://github.com/mhwkb/mhwkb.github.io#mhwkb"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a>
+          <a class="btn btn-custom" href="https://mhwkb.github.io/feed.xml"><i class="fa fa-rss"></i> RSS</a>
+        </div>
+    </div>
+    <div class-"row">
+      <div class="col-md-1"></div>
+      <div class="col-md-4">
+          <h3 class="footer-heading">Add to the Knowledge Base</h3>
+          <ul class="list-unstyled clear-margins">
+            <li><a href="https://drive.google.com/open?id=1tAE0Xd5F9GCfWqqKkEXm9PBFzLZfHvKKBd4OUWztsjE"><span class="glyphicon glyphicon-link"></span> Suggest a Link</a></li>
+            <li><a href="https://github.com/mhwkb/mhwkb.github.io/issues/new?title=Link%20suggestion%20-"><span class="glyphicon glyphicon-link"></span> Suggest a link on GitHub</a></li>
+            <li><a href="https://github.com/mhwkb/mhwkb.github.io/issues/11"><span class="glyphicon glyphicon-duplicate"></span> Make a Patch (GitHub)</a></li>
+            <li><a href="https://drive.google.com/open?id=1pXgH6xgNmisJO5WEYI5VidLCh719dDgQo7yb3UlnW5c"><span class="glyphicon glyphicon-alert"></span> Report a problem link</a></li>
+          </ul>
+      </div>
+      <div class="col-md-3"></div>
+      <div class="col-md-4">
+          <h3 class="footer-heading">Permalinks</h3>
+          <ul class="list-unstyled clear-margins">
+            <li><a href="https://www.fda.gov/Safety/MedWatch/"><span class="glyphicon glyphicon-link"></span> FDA MedWatch</a></li>
+            <li><a href="https://osmihelp.org/"><span class="glyphicon glyphicon-link"></span> Open Sourcing Mental Illness</a></li>
+          </ul>
+      </div>
     </div>
   </div>
-  <div class="container">
-    <table style="width: 100%; margin-left: auto; margin-right: auto;">
-      <tr>
-        <td style="width: 35%;vertical-align: text-top;">
-          <div class="row">
-            <div class="text-left">
-              <h3 style="color: #dbcd5b; background-color: black; padding: 6px">Add to the Knowledge Base</h3>
-              <ul class="list-unstyled clear-margins linklist">
-                <li><a href="https://drive.google.com/open?id=1tAE0Xd5F9GCfWqqKkEXm9PBFzLZfHvKKBd4OUWztsjE"><span class="glyphicon glyphicon-link"></span> Suggest a Link</a></li>
-                <li><a href="https://github.com/mhwkb/mhwkb.github.io/issues/new?title=Link%20suggestion%20-"><span class="glyphicon glyphicon-link"></span> Suggest a link on GitHub</a></li>
-                <li><a href="https://github.com/mhwkb/mhwkb.github.io/issues/11"><span class="glyphicon glyphicon-duplicate"></span> Make a Patch (GitHub)</a></li>
-                <li><a href="https://drive.google.com/open?id=1pXgH6xgNmisJO5WEYI5VidLCh719dDgQo7yb3UlnW5c"><span class="glyphicon glyphicon-alert"></span> Report a problem link</a></li>
-              </ul>
-            </div>
-          </div>
-        </td>
-        <td style="width: 30%; vertical-align: text-top;">
-          <div class="row">
-            <h3 style="color: #dbcd5b; background-color: black; padding: 6px">&nbsp;</h3>
-          </div>
-        </td>
-        <td style="width: 35%; vertical-align: text-top;">
-          <div class="row">
-            <h3 style="color: #dbcd5b; background-color: black; padding: 6px">Permalinks</h3>
-            <ul class="list-unstyled clear-margins linklist">
-              <li><a href="https://psychcentral.com/"><span class="glyphicon glyphicon-link"></span> Psych Central</a></li>
-              <li><a href="https://www.fda.gov/Safety/MedWatch/"><span class="glyphicon glyphicon-link"></span> FDA MedWatch</a></li>
-              <li><a href="https://osmihelp.org/"><span class="glyphicon glyphicon-link"></span> Open Sourcing Mental Illness</a></li>
-            </ul>
-          </div>
-        </td>
-      </tr>
-    </table>
-    
   </div>
   <script src="/assets/js/simple-jekyll-search.js" type="text/javascript"></script>
   <script type="text/javascript">
@@ -529,7 +557,7 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <!-- jQuery local fallback -->
   <script>
-    window.jQuery || document.write('<script src="/assets/js/jquery.min.js"><\/script>')
+    window.jQuery || document.write('<script src="https://mhwkb.github.io/assets/js/jquery-2.2.4.min.js"><\/script>')
   </script>
   <!-- Latest compiled and minified Bootstrap JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -543,6 +571,7 @@
     });
   </script>
   <script src="https://mhwkb.github.io/assets/js/mhwkb-scripts.js"></script>
+  <script src="https://mhwkb.github.io/assets/js/bootstrap-formhelpers.js"></script>
 </footer>
 
   </body>

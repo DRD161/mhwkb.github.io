@@ -27,8 +27,9 @@ I sometimes sync with the repos owned by other project maintainers, and as a res
 the fork moves to the top of the group page.
 
 There are no requirements to be a member. If you would like to request an
-invitation to join, please
-[contact](https://github.com/mhwkb/mhwkb.github.io#contact) me.
+invitation to join, please use this link:<br />
+[https://github.com/orgs/mhwkb/teams/mental-health-github-group](https://github.com/orgs/mhwkb/teams/mental-health-github-group)<br />
+or my [contact information](https://github.com/mhwkb/mhwkb.github.io#contact).
 
 The group page is a statement and a show of support. If it helps
 attract contributors or end-users to my project, or to the other projects
@@ -37,6 +38,8 @@ listed, then I believe it serves a worthwhile purpose.
 If you are a member, it is suggested that in your [group settings](https://github.com/orgs/mhwkb/people), to make your membership
 public (it's private by default). That means you will show up on the group page as
 a member, and the group avatar and link will appear on your profile.
+
+Additionally, you can allow for discussion using GitHub's "team" feature. Simply navigate to [https://github.com/orgs/mhwkb/teams/mental-health-github-group](https://github.com/orgs/mhwkb/teams/mental-health-github-group) and request membership.
 
 If you would like your mental health project forked to the group, please
 send me the GitHub project URL. If you would like my fork of your project

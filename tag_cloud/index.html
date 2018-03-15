@@ -19,6 +19,7 @@
   <link rel="stylesheet" href="https://mhwkb.github.io/assets/css/font-awesome.min.css">
   <!-- style.css reference   -->
   <link rel="stylesheet" href="https://mhwkb.github.io/assets/css/style.css">
+  <link rel="stylesheet" href="https://mhwkb.github.io/assets/css/bootstrap-formhelpers.css">
 
   <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -40,12 +41,18 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="https://mhwkb.github.io">
-            <img alt="Brand" width="20" height="20" src="https://mhwkb.github.io/images/mhwkb_dharma_wheel_logo_180x170.png">
+            <img alt="Brand" class="brand-img" src="https://mhwkb.github.io/images/mhwkb_dharma_wheel_logo_180x170.png">
           </a>
           <a class="navbar-brand" href="https://mhwkb.github.io">Mental Health Knowledge Base</a>
         </div>
       <div id="navbar" class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
+          <li>
+              <div id="languageSelector" class="navbar-btn bfh-selectbox bfh-languages" data-language="00_00"
+                data-available="" data-flags="true" data-blank="false">
+              </div>
+          </li>
+          <li><a href="https://mhwkb.github.io/tag_cloud/"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> Tag cloud</a></li>
           <li><a href="https://mhwkb.github.io"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a></li>
           <li><a href="https://github.com/mhwkb/mhwkb.github.io#mhwkb"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a></li>
           <li><a href="https://mhwkb.github.io/feed.xml"><i class="fa fa-rss"></i> RSS</a></li>
@@ -56,7 +63,8 @@
   <div class="container">
     <div class="text-center">
       <h1><img src="https://mhwkb.github.io/images/mhwkb_dharma_wheel_logo_180x170.png" alt="mhwKB wheel of Dharma logo" width="180" height="170">Mental Health Knowledge Base</h1>
-      <div class="text-center">
+      <!-- disabled after nav dropdown: https://github.com/mhwkb/mhwkb.github.io/pull/102
+<div class="text-center">
   <h2>
   
     
@@ -71,12 +79,15 @@
       
         <a class="label label-danger" href="https://mhwkb.github.io/category/SV/">SV</a>
       
-        <a class="label label-danger" href="https://mhwkb.github.io/category/NP/">NP</a>
+        <a class="label label-danger" href="https://mhwkb.github.io/category/NE/">NE</a>
+      
+        <a class="label label-danger" href="https://mhwkb.github.io/category/pt_BR/">pt_BR</a>
       
     
   
   </h2>
 </div>
+-->
 
     </div>
   </div>
@@ -97,15 +108,15 @@
   
     <span class="site-tag">
       <a href="/tag/adhd/"
-          style="font-size: 92%">
-              ADHD (3)
+          style="font-size: 96%">
+              ADHD (4)
       </a>
     </span>
   
     <span class="site-tag">
       <a href="/tag/ahrp/"
-          style="font-size: 84%">
-              AHRP (1)
+          style="font-size: 88%">
+              AHRP (2)
       </a>
     </span>
   
@@ -132,8 +143,8 @@
   
     <span class="site-tag">
       <a href="/tag/bbc/"
-          style="font-size: 84%">
-              BBC (1)
+          style="font-size: 88%">
+              BBC (2)
       </a>
     </span>
   
@@ -152,6 +163,13 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/bill-protzmann/"
+          style="font-size: 84%">
+              Bill Protzmann (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/billboard/"
           style="font-size: 84%">
               Billboard (1)
@@ -160,8 +178,8 @@
   
     <span class="site-tag">
       <a href="/tag/buddhism/"
-          style="font-size: 92%">
-              Buddhism (3)
+          style="font-size: 96%">
+              Buddhism (4)
       </a>
     </span>
   
@@ -187,6 +205,13 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/daniel-geschwind/"
+          style="font-size: 84%">
+              Daniel Geschwind (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/david-cohen/"
           style="font-size: 84%">
               David Cohen (1)
@@ -201,9 +226,23 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/david-m-allen/"
+          style="font-size: 84%">
+              David M Allen (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/ect/"
           style="font-size: 84%">
               ECT (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/edie-weinstein/"
+          style="font-size: 84%">
+              Edie Weinstein (1)
       </a>
     </span>
   
@@ -223,8 +262,8 @@
   
     <span class="site-tag">
       <a href="/tag/fda/"
-          style="font-size: 84%">
-              FDA (1)
+          style="font-size: 88%">
+              FDA (2)
       </a>
     </span>
   
@@ -237,8 +276,8 @@
   
     <span class="site-tag">
       <a href="/tag/github/"
-          style="font-size: 100%">
-              GitHub (5)
+          style="font-size: 104%">
+              GitHub (6)
       </a>
     </span>
   
@@ -253,6 +292,13 @@
       <a href="/tag/iraq/"
           style="font-size: 84%">
               Iraq (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/ireland/"
+          style="font-size: 84%">
+              Ireland (1)
       </a>
     </span>
   
@@ -295,6 +341,13 @@
       <a href="/tag/jugendpsychiatrie/"
           style="font-size: 84%">
               Jugendpsychiatrie (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/julie-k-jones/"
+          style="font-size: 84%">
+              Julie K Jones (1)
       </a>
     </span>
   
@@ -355,9 +408,23 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/mha/"
+          style="font-size: 84%">
+              MHA (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/marcia-angell/"
           style="font-size: 84%">
               Marcia Angell (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/marcia-eckerd/"
+          style="font-size: 84%">
+              Marcia Eckerd (1)
       </a>
     </span>
   
@@ -383,6 +450,13 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/michael-gandal/"
+          style="font-size: 84%">
+              Michael Gandal (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/minnesota/"
           style="font-size: 84%">
               Minnesota (1)
@@ -390,16 +464,23 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/monica-cassani/"
+          style="font-size: 84%">
+              Monica Cassani (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/nami/"
-          style="font-size: 92%">
-              NAMI (3)
+          style="font-size: 96%">
+              NAMI (4)
       </a>
     </span>
   
     <span class="site-tag">
       <a href="/tag/nih/"
-          style="font-size: 84%">
-              NIH (1)
+          style="font-size: 88%">
+              NIH (2)
       </a>
     </span>
   
@@ -418,9 +499,23 @@
     </span>
   
     <span class="site-tag">
-      <a href="/tag/new-zealand/"
+      <a href="/tag/natasha-tracy/"
           style="font-size: 84%">
-              New Zealand (1)
+              Natasha Tracy (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/nellie-bly/"
+          style="font-size: 84%">
+              Nellie Bly (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/new-zealand/"
+          style="font-size: 88%">
+              New Zealand (2)
       </a>
     </span>
   
@@ -432,9 +527,30 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/noel-hunter/"
+          style="font-size: 84%">
+              Noel Hunter (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/ocd/"
+          style="font-size: 84%">
+              OCD (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/osmi/"
-          style="font-size: 88%">
-              OSMI (2)
+          style="font-size: 92%">
+              OSMI (3)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/otis-webb-brawley/"
+          style="font-size: 84%">
+              Otis Webb Brawley (1)
       </a>
     </span>
   
@@ -447,8 +563,8 @@
   
     <span class="site-tag">
       <a href="/tag/ptsd/"
-          style="font-size: 88%">
-              PTSD (2)
+          style="font-size: 92%">
+              PTSD (3)
       </a>
     </span>
   
@@ -461,8 +577,8 @@
   
     <span class="site-tag">
       <a href="/tag/phd/"
-          style="font-size: 96%">
-              PhD (4)
+          style="font-size: 100%">
+              PhD (5)
       </a>
     </span>
   
@@ -477,6 +593,13 @@
       <a href="/tag/philip-dawdy/"
           style="font-size: 84%">
               Philip Dawdy (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/psych-central/"
+          style="font-size: 92%">
+              Psych Central (3)
       </a>
     </span>
   
@@ -510,8 +633,15 @@
   
     <span class="site-tag">
       <a href="/tag/ssri/"
-          style="font-size: 88%">
-              SSRI (2)
+          style="font-size: 92%">
+              SSRI (3)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/sarah-hewitt/"
+          style="font-size: 84%">
+              Sarah Hewitt (1)
       </a>
     </span>
   
@@ -544,6 +674,13 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/thich-nhat-hanh/"
+          style="font-size: 84%">
+              Thich Nhat Hanh (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/twitter/"
           style="font-size: 84%">
               Twitter (1)
@@ -559,8 +696,8 @@
   
     <span class="site-tag">
       <a href="/tag/usa/"
-          style="font-size: 128%">
-              USA (12)
+          style="font-size: 132%">
+              USA (13)
       </a>
     </span>
   
@@ -580,8 +717,8 @@
   
     <span class="site-tag">
       <a href="/tag/will-hall/"
-          style="font-size: 88%">
-              Will Hall (2)
+          style="font-size: 92%">
+              Will Hall (3)
       </a>
     </span>
   
@@ -600,9 +737,23 @@
     </span>
   
     <span class="site-tag">
-      <a href="/tag/activism/"
+      <a href="/tag/zenobia-morrill/"
           style="font-size: 84%">
-              activism (1)
+              Zenobia Morrill (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/abandonment/"
+          style="font-size: 84%">
+              abandonment (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/activism/"
+          style="font-size: 92%">
+              activism (3)
       </a>
     </span>
   
@@ -622,15 +773,15 @@
   
     <span class="site-tag">
       <a href="/tag/advice/"
-          style="font-size: 96%">
-              advice (4)
+          style="font-size: 104%">
+              advice (6)
       </a>
     </span>
   
     <span class="site-tag">
       <a href="/tag/advocacy/"
-          style="font-size: 88%">
-              advocacy (2)
+          style="font-size: 96%">
+              advocacy (4)
       </a>
     </span>
   
@@ -638,6 +789,13 @@
       <a href="/tag/alerts/"
           style="font-size: 84%">
               alerts (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/altered-states/"
+          style="font-size: 84%">
+              altered states (1)
       </a>
     </span>
   
@@ -663,9 +821,16 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/apps/"
+          style="font-size: 92%">
+              apps (3)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/art/"
-          style="font-size: 84%">
-              art (1)
+          style="font-size: 88%">
+              art (2)
       </a>
     </span>
   
@@ -678,8 +843,15 @@
   
     <span class="site-tag">
       <a href="/tag/authors/"
-          style="font-size: 88%">
-              authors (2)
+          style="font-size: 92%">
+              authors (3)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/autism/"
+          style="font-size: 84%">
+              autism (1)
       </a>
     </span>
   
@@ -692,15 +864,15 @@
   
     <span class="site-tag">
       <a href="/tag/bipolar-disorder/"
-          style="font-size: 96%">
-              bipolar disorder (4)
+          style="font-size: 100%">
+              bipolar disorder (5)
       </a>
     </span>
   
     <span class="site-tag">
       <a href="/tag/blogs/"
-          style="font-size: 148%">
-              blogs (17)
+          style="font-size: 180%">
+              blogs (25)
       </a>
     </span>
   
@@ -720,8 +892,15 @@
   
     <span class="site-tag">
       <a href="/tag/books/"
-          style="font-size: 128%">
-              books (12)
+          style="font-size: 144%">
+              books (16)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/brasil/"
+          style="font-size: 84%">
+              brasil (1)
       </a>
     </span>
   
@@ -733,9 +912,23 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/breathing-exercises/"
+          style="font-size: 84%">
+              breathing exercises (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/chat/"
           style="font-size: 84%">
               chat (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/childhood/"
+          style="font-size: 84%">
+              childhood (1)
       </a>
     </span>
   
@@ -748,8 +941,8 @@
   
     <span class="site-tag">
       <a href="/tag/children/"
-          style="font-size: 100%">
-              children (5)
+          style="font-size: 104%">
+              children (6)
       </a>
     </span>
   
@@ -764,6 +957,13 @@
       <a href="/tag/christian/"
           style="font-size: 84%">
               christian (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/christianity/"
+          style="font-size: 84%">
+              christianity (1)
       </a>
     </span>
   
@@ -797,15 +997,15 @@
   
     <span class="site-tag">
       <a href="/tag/communication/"
-          style="font-size: 84%">
-              communication (1)
+          style="font-size: 92%">
+              communication (3)
       </a>
     </span>
   
     <span class="site-tag">
       <a href="/tag/community/"
-          style="font-size: 100%">
-              community (5)
+          style="font-size: 104%">
+              community (6)
       </a>
     </span>
   
@@ -818,8 +1018,22 @@
   
     <span class="site-tag">
       <a href="/tag/conflicts-of-interest/"
-          style="font-size: 100%">
-              conflicts of interest (5)
+          style="font-size: 104%">
+              conflicts of interest (6)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/connectedness/"
+          style="font-size: 84%">
+              connectedness (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/coping/"
+          style="font-size: 84%">
+              coping (1)
       </a>
     </span>
   
@@ -867,8 +1081,8 @@
   
     <span class="site-tag">
       <a href="/tag/death/"
-          style="font-size: 84%">
-              death (1)
+          style="font-size: 88%">
+              death (2)
       </a>
     </span>
   
@@ -881,15 +1095,22 @@
   
     <span class="site-tag">
       <a href="/tag/depression/"
-          style="font-size: 88%">
-              depression (2)
+          style="font-size: 100%">
+              depression (5)
       </a>
     </span>
   
     <span class="site-tag">
       <a href="/tag/directory/"
-          style="font-size: 112%">
-              directory (8)
+          style="font-size: 116%">
+              directory (9)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/discontinuation-syndrome/"
+          style="font-size: 84%">
+              discontinuation syndrome (1)
       </a>
     </span>
   
@@ -902,22 +1123,36 @@
   
     <span class="site-tag">
       <a href="/tag/discussions/"
-          style="font-size: 96%">
-              discussions (4)
+          style="font-size: 104%">
+              discussions (6)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/diseases/"
+          style="font-size: 84%">
+              diseases (1)
       </a>
     </span>
   
     <span class="site-tag">
       <a href="/tag/doctors/"
-          style="font-size: 152%">
-              doctors (18)
+          style="font-size: 164%">
+              doctors (21)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/e-health/"
+          style="font-size: 88%">
+              e health (2)
       </a>
     </span>
   
     <span class="site-tag">
       <a href="/tag/education/"
-          style="font-size: 108%">
-              education (7)
+          style="font-size: 116%">
+              education (9)
       </a>
     </span>
   
@@ -936,9 +1171,23 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/essays/"
+          style="font-size: 92%">
+              essays (3)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/events/"
           style="font-size: 84%">
               events (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/exposure-therapy/"
+          style="font-size: 84%">
+              exposure therapy (1)
       </a>
     </span>
   
@@ -958,15 +1207,22 @@
   
     <span class="site-tag">
       <a href="/tag/family/"
-          style="font-size: 84%">
-              family (1)
+          style="font-size: 92%">
+              family (3)
       </a>
     </span>
   
     <span class="site-tag">
       <a href="/tag/financial-relationships/"
+          style="font-size: 88%">
+              financial relationships (2)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/food/"
           style="font-size: 84%">
-              financial relationships (1)
+              food (1)
       </a>
     </span>
   
@@ -979,8 +1235,8 @@
   
     <span class="site-tag">
       <a href="/tag/forums/"
-          style="font-size: 88%">
-              forums (2)
+          style="font-size: 96%">
+              forums (4)
       </a>
     </span>
   
@@ -1006,6 +1262,20 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/genetics/"
+          style="font-size: 84%">
+              genetics (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/goals/"
+          style="font-size: 84%">
+              goals (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/government/"
           style="font-size: 108%">
               government (7)
@@ -1013,9 +1283,30 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/grief-and-loss/"
+          style="font-size: 88%">
+              grief and loss (2)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/groups/"
           style="font-size: 84%">
               groups (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/gun-violence/"
+          style="font-size: 88%">
+              gun violence (2)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/habits/"
+          style="font-size: 84%">
+              habits (1)
       </a>
     </span>
   
@@ -1042,8 +1333,8 @@
   
     <span class="site-tag">
       <a href="/tag/history/"
-          style="font-size: 84%">
-              history (1)
+          style="font-size: 88%">
+              history (2)
       </a>
     </span>
   
@@ -1056,8 +1347,15 @@
   
     <span class="site-tag">
       <a href="/tag/human-rights/"
-          style="font-size: 92%">
-              human rights (3)
+          style="font-size: 100%">
+              human rights (5)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/humor/"
+          style="font-size: 84%">
+              humor (1)
       </a>
     </span>
   
@@ -1069,9 +1367,30 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/illness/"
+          style="font-size: 84%">
+              illness (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/immune-system/"
           style="font-size: 84%">
               immune system (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/in-patient-care/"
+          style="font-size: 88%">
+              in patient care (2)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/integrative/"
+          style="font-size: 84%">
+              integrative (1)
       </a>
     </span>
   
@@ -1084,8 +1403,8 @@
   
     <span class="site-tag">
       <a href="/tag/journalism/"
-          style="font-size: 96%">
-              journalism (4)
+          style="font-size: 100%">
+              journalism (5)
       </a>
     </span>
   
@@ -1100,6 +1419,13 @@
       <a href="/tag/learning/"
           style="font-size: 92%">
               learning (3)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/lifestyles/"
+          style="font-size: 84%">
+              lifestyles (1)
       </a>
     </span>
   
@@ -1126,15 +1452,15 @@
   
     <span class="site-tag">
       <a href="/tag/medication/"
-          style="font-size: 104%">
-              medication (6)
+          style="font-size: 108%">
+              medication (7)
       </a>
     </span>
   
     <span class="site-tag">
       <a href="/tag/meditation/"
-          style="font-size: 88%">
-              meditation (2)
+          style="font-size: 92%">
+              meditation (3)
       </a>
     </span>
   
@@ -1160,6 +1486,20 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/mental/"
+          style="font-size: 84%">
+              mental (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/mental-health-reform/"
+          style="font-size: 84%">
+              mental health reform (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/midlife/"
           style="font-size: 84%">
               midlife (1)
@@ -1168,22 +1508,29 @@
   
     <span class="site-tag">
       <a href="/tag/mindfulness/"
-          style="font-size: 96%">
-              mindfulness (4)
+          style="font-size: 104%">
+              mindfulness (6)
       </a>
     </span>
   
     <span class="site-tag">
       <a href="/tag/money/"
-          style="font-size: 84%">
-              money (1)
+          style="font-size: 88%">
+              money (2)
       </a>
     </span>
   
     <span class="site-tag">
       <a href="/tag/mothers/"
+          style="font-size: 92%">
+              mothers (3)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/movies/"
           style="font-size: 84%">
-              mothers (1)
+              movies (1)
       </a>
     </span>
   
@@ -1196,8 +1543,15 @@
   
     <span class="site-tag">
       <a href="/tag/music-therapy/"
-          style="font-size: 104%">
-              music therapy (6)
+          style="font-size: 108%">
+              music therapy (7)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/nature/"
+          style="font-size: 84%">
+              nature (1)
       </a>
     </span>
   
@@ -1210,22 +1564,22 @@
   
     <span class="site-tag">
       <a href="/tag/neuroscience/"
-          style="font-size: 92%">
-              neuroscience (3)
+          style="font-size: 96%">
+              neuroscience (4)
       </a>
     </span>
   
     <span class="site-tag">
       <a href="/tag/news/"
-          style="font-size: 116%">
-              news (9)
+          style="font-size: 128%">
+              news (12)
       </a>
     </span>
   
     <span class="site-tag">
       <a href="/tag/non-pharmacological/"
-          style="font-size: 96%">
-              non pharmacological (4)
+          style="font-size: 108%">
+              non pharmacological (7)
       </a>
     </span>
   
@@ -1238,8 +1592,15 @@
   
     <span class="site-tag">
       <a href="/tag/nutrition/"
-          style="font-size: 88%">
-              nutrition (2)
+          style="font-size: 92%">
+              nutrition (3)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/online-counseling/"
+          style="font-size: 84%">
+              online counseling (1)
       </a>
     </span>
   
@@ -1254,6 +1615,13 @@
       <a href="/tag/open-source/"
           style="font-size: 84%">
               open source (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/opinions/"
+          style="font-size: 84%">
+              opinions (1)
       </a>
     </span>
   
@@ -1280,8 +1648,15 @@
   
     <span class="site-tag">
       <a href="/tag/personal-stories/"
-          style="font-size: 120%">
-              personal stories (10)
+          style="font-size: 124%">
+              personal stories (11)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/pets/"
+          style="font-size: 84%">
+              pets (1)
       </a>
     </span>
   
@@ -1314,6 +1689,13 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/prevention/"
+          style="font-size: 84%">
+              prevention (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/professors/"
           style="font-size: 84%">
               professors (1)
@@ -1322,8 +1704,22 @@
   
     <span class="site-tag">
       <a href="/tag/providing-support/"
-          style="font-size: 92%">
-              providing support (3)
+          style="font-size: 108%">
+              providing support (7)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/psicossocial/"
+          style="font-size: 84%">
+              psicossocial (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/psychedelic-drugs/"
+          style="font-size: 84%">
+              psychedelic drugs (1)
       </a>
     </span>
   
@@ -1336,8 +1732,8 @@
   
     <span class="site-tag">
       <a href="/tag/psychiatry/"
-          style="font-size: 92%">
-              psychiatry (3)
+          style="font-size: 96%">
+              psychiatry (4)
       </a>
     </span>
   
@@ -1349,9 +1745,16 @@
     </span>
   
     <span class="site-tag">
-      <a href="/tag/public-speaking/"
+      <a href="/tag/psychotherapy/"
           style="font-size: 84%">
-              public speaking (1)
+              psychotherapy (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/public-speaking/"
+          style="font-size: 88%">
+              public speaking (2)
       </a>
     </span>
   
@@ -1377,6 +1780,13 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/relationships/"
+          style="font-size: 84%">
+              relationships (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/reminders/"
           style="font-size: 84%">
               reminders (1)
@@ -1385,15 +1795,15 @@
   
     <span class="site-tag">
       <a href="/tag/research/"
-          style="font-size: 104%">
-              research (6)
+          style="font-size: 108%">
+              research (7)
       </a>
     </span>
   
     <span class="site-tag">
       <a href="/tag/resources/"
-          style="font-size: 124%">
-              resources (11)
+          style="font-size: 136%">
+              resources (14)
       </a>
     </span>
   
@@ -1413,8 +1823,15 @@
   
     <span class="site-tag">
       <a href="/tag/safety/"
-          style="font-size: 88%">
-              safety (2)
+          style="font-size: 92%">
+              safety (3)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/saúde/"
+          style="font-size: 84%">
+              saúde (1)
       </a>
     </span>
   
@@ -1426,9 +1843,16 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/schools/"
+          style="font-size: 84%">
+              schools (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/science/"
-          style="font-size: 88%">
-              science (2)
+          style="font-size: 92%">
+              science (3)
       </a>
     </span>
   
@@ -1462,8 +1886,8 @@
   
     <span class="site-tag">
       <a href="/tag/self-help/"
-          style="font-size: 92%">
-              self help (3)
+          style="font-size: 96%">
+              self help (4)
       </a>
     </span>
   
@@ -1471,6 +1895,13 @@
       <a href="/tag/senior-citizens/"
           style="font-size: 84%">
               senior citizens (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/sexual-abuse/"
+          style="font-size: 84%">
+              sexual abuse (1)
       </a>
     </span>
   
@@ -1483,8 +1914,8 @@
   
     <span class="site-tag">
       <a href="/tag/side-effects/"
-          style="font-size: 116%">
-              side effects (9)
+          style="font-size: 124%">
+              side effects (11)
       </a>
     </span>
   
@@ -1492,6 +1923,13 @@
       <a href="/tag/sleep/"
           style="font-size: 84%">
               sleep (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/smartwatch/"
+          style="font-size: 84%">
+              smartwatch (1)
       </a>
     </span>
   
@@ -1517,6 +1955,13 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/society/"
+          style="font-size: 84%">
+              society (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/software/"
           style="font-size: 84%">
               software (1)
@@ -1525,8 +1970,8 @@
   
     <span class="site-tag">
       <a href="/tag/spirituality/"
-          style="font-size: 84%">
-              spirituality (1)
+          style="font-size: 96%">
+              spirituality (4)
       </a>
     </span>
   
@@ -1539,8 +1984,8 @@
   
     <span class="site-tag">
       <a href="/tag/stigma/"
-          style="font-size: 88%">
-              stigma (2)
+          style="font-size: 92%">
+              stigma (3)
       </a>
     </span>
   
@@ -1560,8 +2005,15 @@
   
     <span class="site-tag">
       <a href="/tag/studies/"
-          style="font-size: 92%">
-              studies (3)
+          style="font-size: 100%">
+              studies (5)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/subcultures/"
+          style="font-size: 84%">
+              subcultures (1)
       </a>
     </span>
   
@@ -1574,15 +2026,15 @@
   
     <span class="site-tag">
       <a href="/tag/suicide/"
-          style="font-size: 88%">
-              suicide (2)
+          style="font-size: 96%">
+              suicide (4)
       </a>
     </span>
   
     <span class="site-tag">
       <a href="/tag/suicide-prevention/"
-          style="font-size: 100%">
-              suicide prevention (5)
+          style="font-size: 108%">
+              suicide prevention (7)
       </a>
     </span>
   
@@ -1601,23 +2053,37 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/teaching/"
+          style="font-size: 84%">
+              teaching (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/technology/"
-          style="font-size: 104%">
-              technology (6)
+          style="font-size: 124%">
+              technology (11)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/therapie/"
+          style="font-size: 84%">
+              therapie (1)
       </a>
     </span>
   
     <span class="site-tag">
       <a href="/tag/therapy/"
-          style="font-size: 84%">
-              therapy (1)
+          style="font-size: 92%">
+              therapy (3)
       </a>
     </span>
   
     <span class="site-tag">
       <a href="/tag/training/"
-          style="font-size: 92%">
-              training (3)
+          style="font-size: 104%">
+              training (6)
       </a>
     </span>
   
@@ -1632,6 +2098,13 @@
       <a href="/tag/trauma/"
           style="font-size: 84%">
               trauma (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/travel/"
+          style="font-size: 84%">
+              travel (1)
       </a>
     </span>
   
@@ -1658,8 +2131,8 @@
   
     <span class="site-tag">
       <a href="/tag/videos/"
-          style="font-size: 108%">
-              videos (7)
+          style="font-size: 112%">
+              videos (8)
       </a>
     </span>
   
@@ -1667,6 +2140,13 @@
       <a href="/tag/viewpoints/"
           style="font-size: 108%">
               viewpoints (7)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/virtual-reality/"
+          style="font-size: 88%">
+              virtual reality (2)
       </a>
     </span>
   
@@ -1685,9 +2165,23 @@
     </span>
   
     <span class="site-tag">
+      <a href="/tag/wellbeing/"
+          style="font-size: 84%">
+              wellbeing (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
       <a href="/tag/wiki/"
           style="font-size: 84%">
               wiki (1)
+      </a>
+    </span>
+  
+    <span class="site-tag">
+      <a href="/tag/withdrawal/"
+          style="font-size: 84%">
+              withdrawal (1)
       </a>
     </span>
   
@@ -1700,8 +2194,8 @@
   
     <span class="site-tag">
       <a href="/tag/wordpress/"
-          style="font-size: 92%">
-              wordpress (3)
+          style="font-size: 100%">
+              wordpress (5)
       </a>
     </span>
   
@@ -1810,47 +2304,44 @@
     </main>
     <footer class="site-footer">
   <div class="container">
-    <div class="text-center">
-      <a class="btn btn-custom" href="https://mhwkb.github.io"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
-      <a class="btn btn-custom" href="https://github.com/mhwkb/mhwkb.github.io#mhwkb"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a>
-      <a class="btn btn-custom" href="https://mhwkb.github.io/feed.xml"><i class="fa fa-rss"></i> RSS</a>
-      <br /><br/>
+    <h1>Recent Mental Health-related posts from Other Sites</h1>
+    <h2>If Me</h2>
+    <script src="//rss.bloople.net/?url=https%3A%2F%2Fmedium.com%2Ffeed%2Fifme&limit=5&showtitle=false&type=js"></script>
+    <h2>Psych Central Blog Network - Recent Headlines</h2>
+    <script src="//rss.bloople.net/?url=https%3A%2F%2Fpsychcentral.com%2Fallblogs%2Ffeed%2F&limit=5&showtitle=false&type=js"></script>
+    <h2>Mad in America - Recent Headlines</h2>
+    <script src="//rss.bloople.net/?url=https%3A%2F%2Fwww.madinamerica.com%2Ffeed&limit=5&showtitle=false&type=js"></script>
+  </div>
+  <div class="navbar navbar-default">
+    <div class="container">
+    <div class="row">
+      <div class="footer-buttons text-center col-md-12">
+          <a class="btn btn-custom" href="https://mhwkb.github.io"><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Home</a>
+          <a class="btn btn-custom" href="https://github.com/mhwkb/mhwkb.github.io#mhwkb"><span class="glyphicon glyphicon-info-sign" aria-hidden="true"></span> About</a>
+          <a class="btn btn-custom" href="https://mhwkb.github.io/feed.xml"><i class="fa fa-rss"></i> RSS</a>
+        </div>
+    </div>
+    <div class-"row">
+      <div class="col-md-1"></div>
+      <div class="col-md-4">
+          <h3 class="footer-heading">Add to the Knowledge Base</h3>
+          <ul class="list-unstyled clear-margins">
+            <li><a href="https://drive.google.com/open?id=1tAE0Xd5F9GCfWqqKkEXm9PBFzLZfHvKKBd4OUWztsjE"><span class="glyphicon glyphicon-link"></span> Suggest a Link</a></li>
+            <li><a href="https://github.com/mhwkb/mhwkb.github.io/issues/new?title=Link%20suggestion%20-"><span class="glyphicon glyphicon-link"></span> Suggest a link on GitHub</a></li>
+            <li><a href="https://github.com/mhwkb/mhwkb.github.io/issues/11"><span class="glyphicon glyphicon-duplicate"></span> Make a Patch (GitHub)</a></li>
+            <li><a href="https://drive.google.com/open?id=1pXgH6xgNmisJO5WEYI5VidLCh719dDgQo7yb3UlnW5c"><span class="glyphicon glyphicon-alert"></span> Report a problem link</a></li>
+          </ul>
+      </div>
+      <div class="col-md-3"></div>
+      <div class="col-md-4">
+          <h3 class="footer-heading">Permalinks</h3>
+          <ul class="list-unstyled clear-margins">
+            <li><a href="https://www.fda.gov/Safety/MedWatch/"><span class="glyphicon glyphicon-link"></span> FDA MedWatch</a></li>
+            <li><a href="https://osmihelp.org/"><span class="glyphicon glyphicon-link"></span> Open Sourcing Mental Illness</a></li>
+          </ul>
+      </div>
     </div>
   </div>
-  <div class="container">
-    <table style="width: 100%; margin-left: auto; margin-right: auto;">
-      <tr>
-        <td style="width: 35%;vertical-align: text-top;">
-          <div class="row">
-            <div class="text-left">
-              <h3 style="color: #dbcd5b; background-color: black; padding: 6px">Add to the Knowledge Base</h3>
-              <ul class="list-unstyled clear-margins linklist">
-                <li><a href="https://drive.google.com/open?id=1tAE0Xd5F9GCfWqqKkEXm9PBFzLZfHvKKBd4OUWztsjE"><span class="glyphicon glyphicon-link"></span> Suggest a Link</a></li>
-                <li><a href="https://github.com/mhwkb/mhwkb.github.io/issues/new?title=Link%20suggestion%20-"><span class="glyphicon glyphicon-link"></span> Suggest a link on GitHub</a></li>
-                <li><a href="https://github.com/mhwkb/mhwkb.github.io/issues/11"><span class="glyphicon glyphicon-duplicate"></span> Make a Patch (GitHub)</a></li>
-                <li><a href="https://drive.google.com/open?id=1pXgH6xgNmisJO5WEYI5VidLCh719dDgQo7yb3UlnW5c"><span class="glyphicon glyphicon-alert"></span> Report a problem link</a></li>
-              </ul>
-            </div>
-          </div>
-        </td>
-        <td style="width: 30%; vertical-align: text-top;">
-          <div class="row">
-            <h3 style="color: #dbcd5b; background-color: black; padding: 6px">&nbsp;</h3>
-          </div>
-        </td>
-        <td style="width: 35%; vertical-align: text-top;">
-          <div class="row">
-            <h3 style="color: #dbcd5b; background-color: black; padding: 6px">Permalinks</h3>
-            <ul class="list-unstyled clear-margins linklist">
-              <li><a href="https://psychcentral.com/"><span class="glyphicon glyphicon-link"></span> Psych Central</a></li>
-              <li><a href="https://www.fda.gov/Safety/MedWatch/"><span class="glyphicon glyphicon-link"></span> FDA MedWatch</a></li>
-              <li><a href="https://osmihelp.org/"><span class="glyphicon glyphicon-link"></span> Open Sourcing Mental Illness</a></li>
-            </ul>
-          </div>
-        </td>
-      </tr>
-    </table>
-    
   </div>
   <script src="/assets/js/simple-jekyll-search.js" type="text/javascript"></script>
   <script type="text/javascript">
@@ -1871,7 +2362,7 @@
   <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
   <!-- jQuery local fallback -->
   <script>
-    window.jQuery || document.write('<script src="/assets/js/jquery.min.js"><\/script>')
+    window.jQuery || document.write('<script src="https://mhwkb.github.io/assets/js/jquery-2.2.4.min.js"><\/script>')
   </script>
   <!-- Latest compiled and minified Bootstrap JavaScript -->
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
@@ -1885,6 +2376,7 @@
     });
   </script>
   <script src="https://mhwkb.github.io/assets/js/mhwkb-scripts.js"></script>
+  <script src="https://mhwkb.github.io/assets/js/bootstrap-formhelpers.js"></script>
 </footer>
 
   </body>

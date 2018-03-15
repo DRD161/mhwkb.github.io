@@ -6,7 +6,8 @@ https://mhwkb.github.io/
 * [increase awareness](http://www.ohchr.org/EN/NewsEvents/Pages/DisplayNews.aspx?NewsID=21689&LangID=E)
 * Web site should be low-maintenance
   * no logins necessary, all changes to site will be submitted through the
-  GitHub project page
+  GitHub project page, but feedback and link suggestions and be sent by email
+  and through a form on the web site.
   * links to external web sites added should have relatively fast load times,
   not be bogged down fetching hotlinked images, etc.
 * To accumulate a wide variety of links related to mental health and wellness
